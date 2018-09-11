@@ -81,4 +81,5 @@ class Delivery{
     return store.meals[0];
   }
 }
+Meal.byPrice(){}
 
