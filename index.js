@@ -52,7 +52,7 @@ class Customer{
     });
   }
   meals(){
-    return deliveries();
+    return this.deliveries();
   }
 }
 
