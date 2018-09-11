@@ -52,9 +52,7 @@ class Customer{
     });
   }
   meals(){
-    return store.meals.filter(meal =>{
-      return meal.id === this.customerId;
-    });
+    return deliveries();
   }
 }
 
