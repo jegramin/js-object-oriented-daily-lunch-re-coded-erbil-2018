@@ -54,11 +54,9 @@ class Customer{
       return delivery.customerId === this.id; 
     });
   }
-  meals(){
-    return store.deliveries.filter(meal =>{
-      return meal.id === this.mealId;
-    });
-  }
+  meals() {
+      return this.deliveries().map(delivery => delivery.meal());
+    }
   totalSpent(){
     return this.meals().reduce((total,meal) => (total += meal.price),0)
   }
