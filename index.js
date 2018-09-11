@@ -52,8 +52,8 @@ class Customer{
     });
   }
   meals(){
-    return store.deliveries.filter(delivery => {
-      return delivery.customerId === this.id; 
+    return store.meals.filter(meal =>{
+      return meal.id === this.customerId;
     });
   }
 }
