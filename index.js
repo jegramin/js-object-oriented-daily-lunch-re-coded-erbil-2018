@@ -54,11 +54,11 @@ class Customer{
       return delivery.customerId === this.id; 
     });
   }
-  meals() {
-      return this.deliveries().map(delivery => delivery.meal());
-    }
-
-  
+  meals(){
+    return store.meals.filter(meal =>{
+      return meal.customerId === this.id;
+    });
+  }
   totalSpent(){
     return this.meals().reduce((total,meal) => (total += meal.price),0)
   }
@@ -80,8 +80,8 @@ class Delivery{
   customer(){
     return store.customers[0];
   }
-  meal() {
-      return store.meals.find(meal => meal.id === this.mealId);
-    }
+  meal(){
+    return store.meals[0];
+  }
 }
 
