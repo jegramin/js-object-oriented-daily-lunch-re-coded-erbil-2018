@@ -36,6 +36,9 @@ class Meal{
   customers(){
     return store.customers;
   }
+  byPrice(){
+    
+  }
 }
 
 let customerId = 0;
