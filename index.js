@@ -56,7 +56,7 @@ class Customer{
   }
   meals(){
     return store.deliveries.filter(meal =>{
-      return meal.id === this.customerId;
+      return meal.id === this.mealId;
     });
   }
   totalSpent(){
