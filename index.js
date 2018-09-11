@@ -36,8 +36,8 @@ class Meal{
   customers(){
     return store.customers;
   }
-  static byPrice(){
-    return store.meals
+  static byPrice(a){
+    return store.meals[a]
   }
 }
 
