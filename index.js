@@ -59,6 +59,9 @@ class Customer{
       return meal.customerId === this.id;
     });
   }
+  totalSpent(){
+    return this.meals()
+  }
 }
 
 
