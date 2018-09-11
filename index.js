@@ -59,9 +59,9 @@ class Customer{
       return meal.customerId === this.id;
     });
   }
-  totalSpent(){
-    return this.meals().reduce((total,meal) => (total += meal.price),0)
-  }
+  totalSpent() {
+      return this.meals().reduce((total, meal) => (total += meal.price), 0);
+    }
 }
 
 
