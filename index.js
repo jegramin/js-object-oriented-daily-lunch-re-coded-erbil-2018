@@ -52,7 +52,9 @@ class Customer{
     });
   }
   meals(){
-    return this.deliveries();
+    return store.meals.filter(meal =>{
+      return meal.id === this.customerId;
+    });
   }
 }
 
