@@ -36,7 +36,7 @@ class Meal{
   customers(){
     return store.customers;
   }
-  byPrice(){
+  static byPrice(){
     
   }
 }
